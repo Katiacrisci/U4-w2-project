@@ -1,8 +1,5 @@
 package models;
 
-import lombok.AllArgsConstructor;
-
-@AllArgsConstructor
 
 public class Libro extends Pubblicazione {
 
@@ -11,7 +8,7 @@ public class Libro extends Pubblicazione {
 
     @Override
     public String toString() {
-        return super.toString() + this.autore + "#" + this.genere;
+        return super.toString() + this.autore + "#" + this.genere + "\n";
     }
 }
 

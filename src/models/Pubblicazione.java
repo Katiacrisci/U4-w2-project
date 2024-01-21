@@ -1,18 +1,19 @@
 package models;
 
+
 import lombok.AllArgsConstructor;
+import lombok.NoArgsConstructor;
 
+@NoArgsConstructor
 @AllArgsConstructor
-
 public abstract class Pubblicazione {
-    private long Isbn;
+    private Long Isbn;
     private String title;
-    private int annoDiPubblicazione;
-    private int numeroPagine;
+    private Integer annoDiPubblicazione;
+    private Integer numeroPagine;
 
     @Override
     public String toString() {
         return this.Isbn + "#" + this.title + "#" + this.annoDiPubblicazione + "#" + this.numeroPagine + "#";
-
     }
 }
